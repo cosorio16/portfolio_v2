@@ -54,7 +54,7 @@ function App() {
         <Footer />
       </div>
 
-      <div className="w-full h-dvh font-Sora lg:hidden flex items-center justify-center flex-col">
+      <div className="bg-cream w-full h-dvh font-Sora lg:hidden flex items-center justify-center flex-col">
         <div className="w-96 border-carbon/10 border-2 p-3 rounded">
           <p className="mb-4">
             I've been working on my portfolio since <strong>June 7th</strong>.
