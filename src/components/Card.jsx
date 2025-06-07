@@ -1,6 +1,7 @@
 import { useState } from "react";
 import WorldIcon from "../icons/WorldIcon";
 import GithubIcon from "../icons/GithubIcon";
+import Arrow from "../icons/Arrow";
 
 function Card({ image, bgColor, title, stack, gitHub, link, download }) {
   const [hover, setHover] = useState(false);
@@ -24,7 +25,7 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
         >
           <div className="flex items-center gap-4 w-full justify-end">
             <a
-              href="#"
+              href={gitHub}
               target="_blank"
               className="text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
             >
@@ -33,12 +34,12 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
               </span>
             </a>
             <a
-              href="#"
+              href={link}
               target="_blank"
-              className="text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
+              className="-rotate-45 text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
             >
               <span>
-                <WorldIcon sizes={30} />
+                <Arrow sizes={25} />
               </span>
             </a>
           </div>
@@ -64,12 +65,12 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
         style={{
           backgroundColor: `#${bgColor}`,
         }}
-        className="p-10 aspect-square w-full "
+        className="p-1 aspect-square w-full flex items-center justify-center"
       >
         <img
           src={image}
           alt=""
-          className="aspect-square object-cover object-center"
+          className=" object-center object-cover"
         />
       </div>
     </div>

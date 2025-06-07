@@ -16,18 +16,18 @@ function Header() {
       </div>
       <nav className="flex items-center gap-8 text-cream pr-5">
         <a
-          href="#"
+          href="https://github.com/cosorio16"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
         >
           <span>
             <GithubIcon sizes={35} />
           </span>
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/osorio_2004_/"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
         >
           <span>
             <InstagramIcon sizes={35} />
@@ -36,7 +36,7 @@ function Header() {
         <a
           href="#"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
         >
           <span>
             <WorldIcon sizes={35} />

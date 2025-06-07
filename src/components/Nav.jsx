@@ -23,7 +23,7 @@ function Nav() {
         ))}
       </div>
 
-      <button className="text-cream text-2xl font-semibold font-Sora ring-2 ring-cream rounded-full w-52 py-2 hover:w-56 transition-all duration-300">
+      <button className="text-cream text-2xl font-semibold font-Sora ring-2 ring-cream rounded-full w-52 py-2 cursor-pointer transition-all duration-300">
         Hire Me
       </button>
     </nav>
