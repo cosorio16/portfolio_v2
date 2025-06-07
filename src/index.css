@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manjari:wght@100;400;700&family=Noto+Sans+TC:wght@100..900&family=Sora:wght@100..800&family=Special+Gothic+Expanded+One&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-Archivo: "Archivo Black", sans-serif;
+  --font-Sans: "Noto Sans TC", sans-serif;
+  --font-Manjari: "Manjari", sans-serif;
+  --font-Special: "Special Gothic Expanded One", sans-serif;
+  --font-Inter: "Inter", sans-serif;
+  --font-Sora: "Sora", sans-serif;
+  --color-carbon: #333333;
+  --color-orange: #fe5944;
+  --color-cream: #fcf1e3;
+  --color-brown: #874300;
+}
+
+html {
+  scrollbar-width: none;
+  user-select: none;
+}
