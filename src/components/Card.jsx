@@ -2,7 +2,7 @@ import { useState } from "react";
 import WorldIcon from "../icons/WorldIcon";
 import GithubIcon from "../icons/GithubIcon";
 
-function Card({ image, bgColor, title, stack }) {
+function Card({ image, bgColor, title, stack, gitHub, link, download }) {
   const [hover, setHover] = useState(false);
 
   return (
@@ -23,27 +23,35 @@ function Card({ image, bgColor, title, stack }) {
           } transition-all duration-100`}
         >
           <div className="flex items-center gap-4 w-full justify-end">
-            <a href="#">
-              <span className="p-1 flex items-center justify-center rounded-full text-cream">
+            <a
+              href="#"
+              target="_blank"
+              className="text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
+            >
+              <span>
                 <GithubIcon sizes={30} />
               </span>
             </a>
-            <a href="#">
-              <span className="p-1 flex items-center justify-center rounded-full text-cream">
+            <a
+              href="#"
+              target="_blank"
+              className="text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
+            >
+              <span>
                 <WorldIcon sizes={30} />
               </span>
             </a>
           </div>
           <div className="grow items-center justify-center flex flex-col gap-1">
-            <h1 className="font-Archivo font-semibold text-4xl uppercase text-cream">
+            <h1 className="font-Archivo font-semibold text-4xl uppercase text-cream text-center">
               {title}
             </h1>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-wrap justify-center">
               {stack &&
                 stack.map((s, i) => (
                   <span
                     key={i}
-                    className="bg-carbon/50 text-cream px-5 py-1 rounded-full font-Sora font-medium"
+                    className="bg-carbon/50 text-cream px-5 py-1 rounded-full font-Sora font-medium min-w-fit"
                   >
                     {s}
                   </span>

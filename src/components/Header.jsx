@@ -15,17 +15,29 @@ function Header() {
         <Clock />
       </div>
       <nav className="flex items-center gap-8 text-cream pr-5">
-        <a href="#" target="_blank">
+        <a
+          href="#"
+          target="_blank"
+          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+        >
           <span>
             <GithubIcon sizes={35} />
           </span>
         </a>
-        <a href="#" target="_blank">
+        <a
+          href="#"
+          target="_blank"
+          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+        >
           <span>
             <InstagramIcon sizes={35} />
           </span>
         </a>
-        <a href="#" target="_blank">
+        <a
+          href="#"
+          target="_blank"
+          className="p-1 hover:scale-110 hover:text-orange hover:bg-cream rounded-full transition-all duration-300"
+        >
           <span>
             <WorldIcon sizes={35} />
           </span>
