@@ -10,7 +10,7 @@ function App() {
         <Hero />
         <section
           id="PROJECTS"
-          className="grid grid-cols-2 py-10 gap-5 px-5 border-x-2 border-carbon/20"
+          className="grid grid-cols-2 py-10 gap-5 px-5 border-x-2 border-carbon/20 dark:border-cream/20"
         >
           {content.projects.map((p, i) => (
             <Card
@@ -26,7 +26,7 @@ function App() {
         </section>
         <section
           id="EXPERIENCE"
-          className="py-16 px-10 text-carbon flex flex-col gap-16 border-x-2 border-carbon/20"
+          className="py-16 px-10 text-carbon dark:text-cream flex flex-col gap-16 border-x-2 border-carbon/20 dark:border-cream/20"
         >
           <h1 className="text-5xl uppercase text-center font-medium font-Archivo">
             Education & Experience
@@ -38,7 +38,7 @@ function App() {
                   key={i}
                   className={`grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
                     i + 1 !== content.history.length &&
-                    "border-b-2 border-carbon/30"
+                    "border-b-2 border-carbon/30 dark:border-cream/30"
                   } py-8 hover:py-10`}
                 >
                   <p className="font-bold">{c.year}</p>
