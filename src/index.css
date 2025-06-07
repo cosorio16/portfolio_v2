@@ -18,4 +18,5 @@
 html {
   scrollbar-width: none;
   user-select: none;
+  scroll-behavior: smooth;
 }

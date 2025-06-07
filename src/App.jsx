@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex flex-col max-w-7xl m-auto">
       <Hero />
-      <section id="#PROJECTS" className="grid grid-cols-2 py-10 gap-5 px-5">
+      <section id="PROJECTS" className="grid grid-cols-2 py-10 gap-5 px-5">
         {content.projects.map((p, i) => (
           <Card
             key={i}
@@ -19,10 +19,10 @@ function App() {
         ))}
       </section>
       <section
-        id="#EXPERIENCE"
-        className="py-16 px-10 text-carbon font-Inter flex flex-col gap-16"
+        id="EXPERIENCE"
+        className="py-16 px-10 text-carbon flex flex-col gap-16"
       >
-        <h1 className="text-5xl uppercase text-center font-medium">
+        <h1 className="text-5xl uppercase text-center font-medium font-Archivo">
           Education & Experience
         </h1>
         <div className="flex flex-col gap-10">
@@ -30,10 +30,10 @@ function App() {
             <>
               <div
                 key={i}
-                className="grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-opacity duration-300"
+                className="grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-opacity duration-300 font-Sora"
               >
                 <p className="font-bold">{c.year}</p>
-                <p className="text-3xl uppercase font-medium text-start col-span-2">
+                <p className="text-3xl uppercase font-semibold text-start col-span-2">
                   {c.role}
                 </p>
                 <p className="col-span-2">{c.description}</p>

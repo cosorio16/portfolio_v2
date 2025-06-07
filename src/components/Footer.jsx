@@ -5,7 +5,7 @@ import WorldIcon from "../icons/WorldIcon";
 
 function Footer() {
   return (
-    <footer className="w-full flex flex-col p-5 pt-10 bg-cream gap-20">
+    <footer id="CONTACT" className="w-full flex flex-col p-5 pt-10 bg-cream gap-20">
       <div className="grid grid-cols-3 w-full">
         <div className="flex flex-col gap-2 text-3xl">
           <span className="font-Archivo">Archivo Black</span>

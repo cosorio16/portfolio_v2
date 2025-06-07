@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center w-full  bg-orange py-8 gap-10">
+    <div id="HOME" className="flex flex-col items-center w-full  bg-orange py-8 gap-10">
       <Header />
       <div className="grid grid-cols-2 w-full h-full">
         <div className="flex justify-end w-full h-full   items-start px-5 flex-col gap-4">

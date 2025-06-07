@@ -10,7 +10,7 @@ function Nav() {
       <div className="flex flex-col gap-4">
         {sections.map((s, i) => (
           <a
-            href="#"
+            href={`#${s.toUpperCase()}`}
             key={i}
             className={`text-3xl uppercase font-Archivo text-carbon ${
               i == activeSection

@@ -2,8 +2,8 @@ import { useState } from "react";
 import WorldIcon from "../icons/WorldIcon";
 import GithubIcon from "../icons/GithubIcon";
 
-function Card({ image, bgColor, color, description, title, stack }) {
-  const [hover, setHover] = useState(true);
+function Card({ image, bgColor, title, stack }) {
+  const [hover, setHover] = useState(false);
 
   return (
     <div
@@ -38,7 +38,6 @@ function Card({ image, bgColor, color, description, title, stack }) {
             <h1 className="font-Archivo font-semibold text-4xl uppercase text-cream">
               {title}
             </h1>
-            <p></p>
             <div className="flex items-center gap-4">
               {stack &&
                 stack.map((s, i) => (
