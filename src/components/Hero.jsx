@@ -18,7 +18,6 @@ function Hero() {
             href="https://www.upwork.com/freelancers/~01d17e915aa3bbb76b?mp_source=share"
             target="_blank"
             className="bg-cream px-5 py-1 rounded-full font-Sora flex items-center justify-center text-brown gap-2 hover:scale-105 transition-all duration-300"
-            
           >
             <span className="size-3 rounded-full bg-brown relative">
               <span className="size-3 rounded-full bg-brown animate-ping absolute top-0 left-0"></span>

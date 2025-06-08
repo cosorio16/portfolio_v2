@@ -1,9 +1,15 @@
+import { useRef, useEffect, useState } from "react";
+
 import Hero from "./components/Hero";
 import content from "./lib/content";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 
 function App() {
+  const scrollToUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="lg:flex flex-col max-w-7xl m-auto hidden">
@@ -31,23 +37,21 @@ function App() {
           <h1 className="text-5xl uppercase text-center font-medium font-Archivo">
             Education & Experience
           </h1>
-          <div className="flex flex-col">
+          <div className="flex flex-col hover:cursor-none ">
             {content.history.map((c, i) => (
-              <>
-                <div
-                  key={i}
-                  className={`grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
-                    i + 1 !== content.history.length &&
-                    "border-b-2 border-carbon/30 dark:border-cream/30"
-                  } py-8 hover:py-10`}
-                >
-                  <p className="font-bold">{c.year}</p>
-                  <p className="text-3xl uppercase font-semibold text-start col-span-2">
-                    {c.role}
-                  </p>
-                  <p className="col-span-2">{c.description}</p>
-                </div>
-              </>
+              <div
+                key={i}
+                className={`grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
+                  i + 1 !== content.history.length &&
+                  "border-b-2 border-carbon/30 dark:border-cream/30"
+                } py-8 hover:py-10`}
+              >
+                <p className="font-bold">{c.year}</p>
+                <p className="text-3xl uppercase font-semibold text-start col-span-2">
+                  {c.role}
+                </p>
+                <p className="col-span-2">{c.description}</p>
+              </div>
             ))}
           </div>
         </section>

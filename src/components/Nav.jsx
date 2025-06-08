@@ -1,9 +1,11 @@
 import { useState } from "react";
 
+
 function Nav() {
   const [activeSection, setActiveSection] = useState(0);
+  const [modalStatus, setModalStatus] = useState(false);
 
-  const sections = ["Home", "Projects", "Experience", "Contact"];
+  const sections = ["Home", "Projects", "Experience", ""];
 
   return (
     <nav className="flex flex-col gap-16 items-end px-5">
@@ -23,9 +25,14 @@ function Nav() {
         ))}
       </div>
 
-      <button className="text-cream text-2xl font-semibold font-Sora ring-2 ring-cream rounded-full w-52 py-2 cursor-pointer transition-all duration-300">
+      <button
+        onClick={() => setModalStatus((prev) => !prev)}
+        className="text-cream text-2xl font-semibold font-Sora ring-2 ring-cream rounded-full w-52 py-2 cursor-pointer transition-all duration-300"
+      >
         Hire Me
       </button>
+
+  
     </nav>
   );
 }

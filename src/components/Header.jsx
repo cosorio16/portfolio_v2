@@ -1,7 +1,7 @@
 import Clock from "./Clock";
 import GithubIcon from "../icons/GithubIcon";
 import InstagramIcon from "../icons/InstagramIcon";
-import WorldIcon from "../icons/WorldIcon";
+import WhatsappIcon from "../icons/WhatsappIcon";
 
 function Header() {
   return (
@@ -14,11 +14,11 @@ function Header() {
       <div className="grow flex items-center justify-center">
         <Clock />
       </div>
-      <nav className="flex items-center gap-8 text-cream pr-5">
+      <nav className="flex items-center gap-8 text-cream pr-5  justify-end">
         <a
           href="https://github.com/cosorio16"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
+          className="hover:scale-110  transition-all duration-300"
         >
           <span>
             <GithubIcon sizes={35} />
@@ -27,19 +27,20 @@ function Header() {
         <a
           href="https://www.instagram.com/osorio_2004_/"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
+          className="hover:scale-110  transition-all duration-300"
         >
           <span>
             <InstagramIcon sizes={35} />
           </span>
         </a>
+
         <a
-          href="#"
+          href="https://api.whatsapp.com/send/?phone=573206852825&text&type=phone_number&app_absent=0"
           target="_blank"
-          className="p-1 hover:scale-110 hover:text-cream hover:bg-carbon/50 rounded-full transition-all duration-300"
+          className=" hover:scale-110  transition-all duration-300"
         >
           <span>
-            <WorldIcon sizes={35} />
+            <WhatsappIcon sizes={30} />
           </span>
         </a>
       </nav>
