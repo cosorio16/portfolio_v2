@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Real IOT Dashboard",
     description: "",
-    image: "/projects/1.png",
+    image: "/projects/1.webp",
     github: "https://github.com/cosorio16/isimo",
     link: "https://isimo.netlify.app/",
     dowload: false,
@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Wordle Game",
     description: "",
-    image: "/projects/2.png",
+    image: "/projects/2.webp",
     github: "https://github.com/cosorio16/dailyWord",
     link: "https://wordle-osorio.netlify.app/",
     dowload: false,
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Food Order App",
     description: "",
-    image: "/projects/3.png",
+    image: "/projects/3.webp",
     github: "https://github.com/cosorio16/foodapp",
     link: "https://dresquite.netlify.app/",
     dowload: false,
@@ -38,7 +38,7 @@ const projects = [
   {
     name: "Landing Page",
     description: "",
-    image: "/projects/4.png",
+    image: "/projects/4.webp",
     github: "https://github.com/cosorio16/ecalab",
     link: "https://ecalabdv.netlify.app/",
     dowload: false,
@@ -50,7 +50,7 @@ const projects = [
   {
     name: "Bus Routes App",
     description: "",
-    image: "/projects/5.png",
+    image: "/projects/5.webp",
     github: "https://github.com/cosorio16/metroUI",
     link: "https://transmetro.netlify.app/",
     dowload: false,
@@ -62,7 +62,7 @@ const projects = [
   {
     name: "IOT Dashboard",
     description: "",
-    image: "/projects/6.png",
+    image: "/projects/6.webp",
     github: "https://github.com/cosorio16/greenYellow",
     link: "https://greenyellow.netlify.app/",
     dowload: false,
@@ -74,7 +74,7 @@ const projects = [
   {
     name: "Starbucks Clone",
     description: "",
-    image: "/projects/7.png",
+    image: "/projects/7.webp",
     github: "https://github.com/cosorio16/starbucks",
     link: "https://osorio-sb-clone.netlify.app/",
     dowload: false,
@@ -86,7 +86,7 @@ const projects = [
   {
     name: "Product Design",
     description: "",
-    image: "/projects/8.png",
+    image: "/projects/8.webp",
     github: "https://",
     link: "https://",
     dowload: false,
@@ -123,5 +123,6 @@ const history = [
       "Currently in the 8th semester, specializing in automation, embedded systems, and control engineering, with a focus on applied electronics and system integration.",
   },
 ];
+
 
 export default { projects, history };

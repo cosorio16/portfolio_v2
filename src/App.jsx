@@ -1,9 +1,8 @@
-import { useRef, useEffect, useState } from "react";
-
 import Hero from "./components/Hero";
 import content from "./lib/content";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import ScrollToUp from "./components/ScrollToUp";
 
 function App() {
   const scrollToUp = () => {
@@ -12,23 +11,29 @@ function App() {
 
   return (
     <>
-      <div className="lg:flex flex-col max-w-7xl m-auto hidden">
+      <div className="flex flex-col max-w-7xl m-auto">
         <Hero />
         <section
           id="PROJECTS"
-          className="grid grid-cols-2 py-10 gap-5 px-5 border-x-2 border-carbon/20 dark:border-cream/20"
+          className="flex flex-col  py-10 gap-5 px-5 border-x-2 border-carbon/20 dark:border-cream/20"
         >
-          {content.projects.map((p, i) => (
-            <Card
-              key={i}
-              bgColor={p.bgColor}
-              image={p.image}
-              title={p.name}
-              stack={p.stack}
-              gitHub={p.github}
-              link={p.link}
-            />
-          ))}
+          <h1 className="text-5xl uppercase text-center font-medium font-Archivo text-carbon dark:text-cream">
+            Projects
+          </h1>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {content.projects.map((p, i) => (
+              <Card
+                key={i}
+                bgColor={p.bgColor}
+                image={p.image}
+                title={p.name}
+                stack={p.stack}
+                gitHub={p.github}
+                link={p.link}
+              />
+            ))}
+          </div>
         </section>
         <section
           id="EXPERIENCE"
@@ -41,16 +46,16 @@ function App() {
             {content.history.map((c, i) => (
               <div
                 key={i}
-                className={`grid grid-cols-5 items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
+                className={`lg:grid lg:grid-cols-5 flex justify-between items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
                   i + 1 !== content.history.length &&
                   "border-b-2 border-carbon/30 dark:border-cream/30"
                 } py-8 hover:py-10`}
               >
                 <p className="font-bold">{c.year}</p>
-                <p className="text-3xl uppercase font-semibold text-start col-span-2">
+                <p className="text-3xl uppercase font-semibold lg:text-start col-span-2 text-end">
                   {c.role}
                 </p>
-                <p className="col-span-2">{c.description}</p>
+                <p className="col-span-2 hidden lg:block">{c.description}</p>
               </div>
             ))}
           </div>
@@ -58,43 +63,7 @@ function App() {
         <Footer />
       </div>
 
-      <div className="bg-cream w-full h-dvh font-Sora lg:hidden flex items-center justify-center flex-col">
-        <div className="w-96 border-carbon/10 border-2 p-3 rounded">
-          <p className="mb-4">
-            I've been working on my portfolio since <strong>June 7th</strong>.
-            Right now, the <span className="font-semibold">desktop</span>{" "}
-            version is available.
-          </p>
-          <p className="mb-4">
-            Please access it from a computer to enjoy a more{" "}
-            <span className="font-semibold text-orange">complete</span>{" "}
-            experience.
-          </p>
-          <a
-            href="https://www.figma.com/proto/keVnKVM4mOMr2QjiMJ7PRE/PORTFOLIO?node-id=141-18"
-            className="inline-block mb-6 text-orange hover:text-orange font-medium underline"
-            target="_blank"
-          >
-            This is the Figma
-          </a>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <a
-              href="/cv.pdf"
-              download
-              className="px-4 py-2 bg-orange text-white rounded hover:scale-105 transition"
-            >
-              Download CV
-            </a>
-            <a
-              href="https://www.instagram.com/osorio_2004_/"
-              target="_blank"
-              className="px-4 py-2 bg-carbon text-white rounded hover:scale-105 transition"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-      </div>
+      <ScrollToUp />
     </>
   );
 }

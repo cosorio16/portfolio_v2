@@ -27,7 +27,7 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
             <a
               href={gitHub}
               target="_blank"
-              className="text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
+              className="text-cream p-3 hover:scale-105 hover:bg-carbon/50 rounded-full transition-all duration-300"
             >
               <span>
                 <GithubIcon sizes={30} />
@@ -36,7 +36,7 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
             <a
               href={link}
               target="_blank"
-              className="-rotate-45 text-cream p-1 hover:scale-105 hover:bg-cream hover:text-carbon rounded-full transition-all duration-300"
+              className="-rotate-45 text-cream p-3 hover:scale-105 hover:bg-carbon/50 rounded-full transition-all duration-300"
             >
               <span>
                 <Arrow sizes={25} />
@@ -67,11 +67,7 @@ function Card({ image, bgColor, title, stack, gitHub, link, download }) {
         }}
         className="p-1 aspect-square w-full flex items-center justify-center"
       >
-        <img
-          src={image}
-          alt=""
-          className=" object-center object-cover"
-        />
+        <img src={image} alt="" className=" object-center object-cover p-10" />
       </div>
     </div>
   );
