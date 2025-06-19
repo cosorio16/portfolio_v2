@@ -83,18 +83,7 @@ const projects = [
     bgColor: "006E49",
     textColor: "",
   },
-  {
-    name: "Product Design",
-    description: "",
-    image: "/projects/8.webp",
-    github: "https://",
-    link: "https://",
-    dowload: false,
-    downlaodLink: "#",
-    stack: ["Canva"],
-    bgColor: "24356E",
-    textColor: "",
-  },
+
 ];
 
 const history = [

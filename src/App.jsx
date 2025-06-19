@@ -3,6 +3,7 @@ import content from "./lib/content";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import ScrollToUp from "./components/ScrollToUp";
+import GithubIcon from "./icons/GithubIcon";
 
 function App() {
   const scrollToUp = () => {
@@ -33,6 +34,18 @@ function App() {
                 link={p.link}
               />
             ))}
+            <a
+              href="https://github.com/cosorio16/"
+              target="_blank"
+              className="flex items-center justify-center font-Archivo text-4xl text-carbon dark:text-cream border border-carbon/30 dark:border-cream/30"
+            >
+              <div className="flex items-center gap-2 px-5 py-2 rounded-full bg-carbon/20 dark:bg-cream/10 hover:gap-5 transition-all duration-300">
+                <span>
+                  <GithubIcon sizes={40} />
+                </span>
+                <span>Explore Github</span>
+              </div>
+            </a>
           </div>
         </section>
         <section
