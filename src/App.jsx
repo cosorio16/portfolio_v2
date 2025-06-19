@@ -39,14 +39,14 @@ function App() {
           id="EXPERIENCE"
           className="py-16 px-10 text-carbon dark:text-cream flex flex-col gap-16 border-x-2 border-carbon/20 dark:border-cream/20"
         >
-          <h1 className="text-5xl uppercase text-center font-medium font-Archivo">
+          <h1 className="text-4xl md:text-5xlS uppercase text-center font-medium font-Archivo">
             Education & Experience
           </h1>
           <div className="flex flex-col hover:cursor-none ">
             {content.history.map((c, i) => (
               <div
                 key={i}
-                className={`lg:grid lg:grid-cols-5 flex justify-between items-center opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
+                className={`lg:grid lg:grid-cols-5 flex justify-between items-center opacity-100 md:opacity-50 hover:opacity-100 transition-all duration-300 font-Sora gap-6 ${
                   i + 1 !== content.history.length &&
                   "border-b-2 border-carbon/30 dark:border-cream/30"
                 } py-8 hover:py-10`}

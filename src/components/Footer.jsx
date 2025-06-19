@@ -11,7 +11,7 @@ function Footer() {
       className="w-full flex flex-col p-5 pt-10 bg-cream gap-20 border-2 border-b-0 border-carbon/20 dark:border-white/20"
     >
       <div className="grid grid-cols-1 gap-5 items-center lg:grid-cols-3 w-full">
-        <div className="flex items-center flex-wrap justify-between lg:flex-col gap-2 text-3xl">
+        <div className="flex items-center lg:items-start flex-wrap justify-between lg:flex-col gap-2 text-3xl">
           <span className="font-Archivo">Archivo Black</span>
           <span className="font-Inter">Inter</span>
           <span className="font-Sora">Sora</span>
@@ -37,7 +37,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-3 flex flex-wrap justify-center gap-5 font-Sora items-end">
+      <div className="lg:grid lg:grid-cols-3 flex flex-col items-center justify-center gap-5 font-Sora">
         <p>Carlos Osorio Cardona</p>
         <div className="flex flex-col gap-5 items-center justify-center">
           <div className="flex items-center gap-10">
