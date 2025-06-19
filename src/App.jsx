@@ -37,7 +37,7 @@ function App() {
             <a
               href="https://github.com/cosorio16/"
               target="_blank"
-              className="flex items-center justify-center font-Archivo text-4xl text-carbon dark:text-cream border border-carbon/30 dark:border-cream/30"
+              className="flex items-center justify-center font-Archivo text-xl lg:text-3xl xl:text-4xl text-carbon dark:text-cream border border-carbon/30 dark:border-cream/30 h-96"
             >
               <div className="flex items-center gap-2 px-5 py-2 rounded-full bg-carbon/20 dark:bg-cream/10 hover:gap-5 transition-all duration-300">
                 <span>
