@@ -8,7 +8,6 @@ function MenuButton() {
 
   useEffect(() => {
     const handleScrollMenu = () => {
-      console.log(window.scrollY);
       setBgActive(window.scrollY >= 550);
       if (window.scrollY >= 450 && window.scrollY < 3600) {
         setActiveSection(1);

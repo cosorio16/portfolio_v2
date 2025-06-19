@@ -4,8 +4,13 @@ function Menu({ status, onClose, activeSection }) {
     <div
       className={`fixed inset-0 bg-orange z-20 ${
         status ? "translate-y-0" : "-translate-y-full"
-      } transition duration-300 flex items-center justify-center`}
+      } transition duration-300 flex items-center justify-center flex-col gap-5`}
     >
+      <div>
+        <div className="bg-cream rounded-full aspect-square p-2">
+          <img src="/1.webp" alt="" className="size-20 object-contain p-2" />
+        </div>
+      </div>
       <div className="flex flex-col gap-4">
         {sections.map((s, i) => (
           <a

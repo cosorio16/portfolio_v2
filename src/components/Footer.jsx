@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
       <div className="lg:grid lg:grid-cols-3 flex flex-col items-center justify-center gap-5 font-Sora">
-        <p>Carlos Osorio Cardona</p>
+        <p className="text-lg font-medium">Carlos Osorio Cardona</p>
         <div className="flex flex-col gap-5 items-center justify-center">
           <div className="flex items-center gap-10">
             <a
