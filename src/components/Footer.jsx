@@ -17,12 +17,16 @@ function Footer() {
           <span className="font-Sora">Sora</span>
         </div>
         <div className="flex items-end justify-center">
-          <button className="bg-orange text-cream text-3xl font-semibold font-Inter w-80 py-3 rounded-full flex gap-4 justify-center items-center hover:gap-10 transition-all duration-300 cursor-pointer">
+          <a
+            href="https://www.instagram.com/osorio_2004_/"
+            target="_blank"
+            className="bg-orange text-cream text-3xl font-semibold font-Inter w-80 py-3 rounded-full flex gap-4 justify-center items-center hover:gap-10 transition-all duration-300 cursor-pointer"
+          >
             Let's Talk!
             <span>
               <Arrow sizes={30} />
             </span>
-          </button>
+          </a>
         </div>
         <div className="flex items-start justify-center lg:justify-end">
           <ul className="flex gap-5">

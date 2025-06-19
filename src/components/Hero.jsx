@@ -16,7 +16,7 @@ function Hero() {
         <div className="flex justify-center md:justify-end w-full h-full items-center md:items-start  px-5 flex-col gap-4 border-b-2 py-5 md:border-0 md:py-0 border-carbon/20">
           <h1 className="text-7xl font-Archivo text-cream flex flex-col items-center md:items-start">
             <span className="block">Web</span>
-            <span className="block">Developer</span>
+            <span className="block text-6xl md:text-7xl">Developer</span>
           </h1>
           <a
             href="https://www.upwork.com/freelancers/~01d17e915aa3bbb76b?mp_source=share"

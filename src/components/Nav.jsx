@@ -5,7 +5,7 @@ function Nav({ onClick }) {
 
   return (
     <>
-      <nav className="h-20 fixed top-0 w-screen left-0 flex px-5 items-center justify-end md:hidden z-20">
+      <nav className="h-20 fixed top-0 w-full left-0 flex px-5 items-center justify-end md:hidden z-20">
         <button>
           <MenuButton />
         </button>
