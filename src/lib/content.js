@@ -1,16 +1,17 @@
 const projects = [
   {
-    name: "Real IOT Dashboard",
+    name: "Loyalty Card App",
     description: "",
-    image: "/projects/1.webp",
-    github: "https://github.com/cosorio16/isimo",
-    link: "https://isimo.netlify.app/",
+    image: "/projects/9.png",
+    github: "https://github.com/cosorio16/stamp",
+    link: "https://zellito.netlify.app/",
     dowload: false,
     downlaodLink: "#",
-    stack: ["React", "Tailwind", "ChartJS", "Zustand"],
-    bgColor: "6A4C93",
+    stack: ["React", "Tailwind", "Firebase", "Recharts"],
+    bgColor: "5454c5",
     textColor: "",
   },
+
   {
     name: "Wordle Game",
     description: "",
@@ -24,17 +25,30 @@ const projects = [
     textColor: "",
   },
   {
-    name: "Food Order App",
+    name: "Real IOT Dashboard",
     description: "",
-    image: "/projects/3.webp",
-    github: "https://github.com/cosorio16/foodapp",
-    link: "https://dresquite.netlify.app/",
+    image: "/projects/1.webp",
+    github: "https://github.com/cosorio16/isimo",
+    link: "https://isimo.netlify.app/",
     dowload: false,
     downlaodLink: "#",
-    stack: ["React", "Tailwind", "Zustand"],
-    bgColor: "E17100",
+    stack: ["React", "Tailwind", "ChartJS", "Zustand"],
+    bgColor: "6A4C93",
     textColor: "",
   },
+
+  // {
+  //   name: "Food Order App",
+  //   description: "",
+  //   image: "/projects/3.webp",
+  //   github: "https://github.com/cosorio16/foodapp",
+  //   link: "https://dresquite.netlify.app/",
+  //   dowload: false,
+  //   downlaodLink: "#",
+  //   stack: ["React", "Tailwind", "Zustand"],
+  //   bgColor: "E17100",
+  //   textColor: "",
+  // },
   {
     name: "Landing Page",
     description: "",
@@ -45,6 +59,19 @@ const projects = [
     downlaodLink: "#",
     stack: ["React", "Tailwind"],
     bgColor: "6CC4CC",
+    textColor: "",
+  },
+
+  {
+    name: "IOT Dashboard",
+    description: "",
+    image: "/projects/6.webp",
+    github: "https://github.com/cosorio16/greenYellow",
+    link: "https://greenyellow.netlify.app/",
+    dowload: false,
+    downlaodLink: "#",
+    stack: ["React", "Tailwind", "ChartJS", "Zustand"],
+    bgColor: "D0D8C3",
     textColor: "",
   },
   {
@@ -60,18 +87,6 @@ const projects = [
     textColor: "",
   },
   {
-    name: "IOT Dashboard",
-    description: "",
-    image: "/projects/6.webp",
-    github: "https://github.com/cosorio16/greenYellow",
-    link: "https://greenyellow.netlify.app/",
-    dowload: false,
-    downlaodLink: "#",
-    stack: ["React", "Tailwind", "ChartJS", "Zustand"],
-    bgColor: "D0D8C3",
-    textColor: "",
-  },
-  {
     name: "Starbucks Clone",
     description: "",
     image: "/projects/7.webp",
@@ -80,10 +95,9 @@ const projects = [
     dowload: false,
     downlaodLink: "#",
     stack: ["Astro", "Tailwind"],
-    bgColor: "006E49",
+    bgColor: "00714b",
     textColor: "",
   },
-
 ];
 
 const history = [
@@ -112,6 +126,5 @@ const history = [
       "Currently in the 8th semester, specializing in automation, embedded systems, and control engineering, with a focus on applied electronics and system integration.",
   },
 ];
-
 
 export default { projects, history };
