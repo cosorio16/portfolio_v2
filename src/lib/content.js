@@ -50,6 +50,18 @@ const projects = [
   //   textColor: "",
   // },
   {
+    name: "Bus Routes App",
+    description: "",
+    image: "/projects/5.webp",
+    github: "https://github.com/cosorio16/metroUI",
+    link: "https://transmetro.netlify.app/",
+    dowload: false,
+    downlaodLink: "#",
+    stack: ["React", "CSS", "JavaScript", "React Router"],
+    bgColor: "174DB6",
+    textColor: "",
+  },
+  {
     name: "Landing Page",
     description: "",
     image: "/projects/4.webp",
@@ -74,18 +86,7 @@ const projects = [
     bgColor: "D0D8C3",
     textColor: "",
   },
-  {
-    name: "Bus Routes App",
-    description: "",
-    image: "/projects/5.webp",
-    github: "https://github.com/cosorio16/metroUI",
-    link: "https://transmetro.netlify.app/",
-    dowload: false,
-    downlaodLink: "#",
-    stack: ["React", "CSS", "JavaScript", "React Router"],
-    bgColor: "174DB6",
-    textColor: "",
-  },
+
   {
     name: "Starbucks Clone",
     description: "",
