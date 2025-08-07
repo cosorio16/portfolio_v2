@@ -35,7 +35,7 @@ export default function Modal({ onClose, show }) {
     {
       icon: InstagramIcon,
       name: "Instagram",
-      link: "https://www.instagram.com/osorio_2004_/",
+      link: "https://www.instagram.com/osorio.frontend/",
     },
     {
       icon: LinkedinIcon,

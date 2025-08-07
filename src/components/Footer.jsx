@@ -18,7 +18,7 @@ function Footer() {
         </div>
         <div className="flex items-end justify-center">
           <a
-            href="https://www.instagram.com/osorio_2004_/"
+            href="https://www.instagram.com/osorio.frontend/"
             target="_blank"
             className="bg-orange text-cream text-3xl font-semibold font-Inter w-80 py-3 rounded-full flex gap-4 justify-center items-center hover:gap-10 transition-all duration-300 cursor-pointer"
           >
