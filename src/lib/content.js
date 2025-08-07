@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Loyalty Card App",
     description: "",
-    image: "/projects/9.png",
+    image: "/projects/9.webp",
     github: "https://github.com/cosorio16/stamp",
     link: "https://zellito.netlify.app/",
     dowload: false,
